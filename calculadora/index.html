@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f1f36ce4f1.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+        
+    <title>calculadora basica</title>
+</head>
+<body>
+   <section >
+
+       <div id="center"> 
+           <h1> calculadora</h1>
+           
+           <input required type="number" placeholder = "Digite um valor" name="" id="primeiroNumero">
+           <span id ="span" class="clSpan"> <i class="fa-solid fa-xmark"></i> </span>
+           <input required type="number" placeholder = "Digite um valor" id = "segundoNumero">
+           
+           <select class="classSelect" name="" id="selectOption"  onchange="mudarIcon()">
+               
+               <option value="1"> Multiplicação </option>
+               <option value="2"> Divisão</option>
+               <option value="3"> Soma</option>
+               <option value="4"> subitração</option>
+            </select>
+            <input type="button" value="calcular" class="btCalcular" id="btCalcular">
+            <p id="outResult" >  </p>
+            
+        </div>
+
+       
+  
+    </section>
+    <script src="script.js"> </script>
+</body>
+</html>
